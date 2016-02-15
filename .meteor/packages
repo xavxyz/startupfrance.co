@@ -18,3 +18,5 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 http
 less
+fortawesome:fontawesome
+twbs:bootstrap

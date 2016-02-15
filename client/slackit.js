@@ -1,5 +1,3 @@
-Template.registerHelper('info', () => Infos.findOne() );
-
 Template.setup.events({
   'submit form': function (e) {
     const info = { org: $('#org').val(), token: $('#token').val(), sentence: $('#sentence').val(), userCount: 'N/A', userOnlineCount: 'N/A' };

@@ -22,7 +22,7 @@
 }
 
 @color-primary: #2cc5d2; //caribbean teal
-@color-secondary: #5db9ff; //cerulean blue
+@color-secondary: #315481; //cerulean blue
 @color-tertiary: #d2edf4; //muted teal
 @color-ancillary: #1c3f53; //deep navy
 @color-complementary: #778b91; //muted navy
@@ -41,8 +41,8 @@
 
 body {
     .position(absolute, 0, 0, 0, 0);
-    background-color: #315481;
-    .background-image( linear-gradient(top, #315481, #918e82 100%) );
+    background-color: @color-secondary;
+    .background-image( linear-gradient(top, @color-secondary, #918e82 100%) );
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: @color-tertiary;
@@ -50,8 +50,8 @@ body {
 }
 
 .splash {
-    width: 350px;
-    margin: 200px auto;
+    width: 300px;
+    margin: 30px auto;
     text-align: center;
     font-family: "Helvetica Neue", Helvetica, Arial
 }
@@ -162,19 +162,12 @@ p.signin a {
 p.signin a:hover {
     background-color: @color-medium-rare
 }
-footer {
-    color: @color-rare;
-    font-size: 11px;
-    margin: 200px auto 0;
-    width: 300px;
-    text-align: center
+
+.footer a {
+    color: @color-medium-rare
 }
-footer a {
-    color: @color-well;
-    text-decoration: none;
-    border-bottom: 1px solid @color-medium
-}
-footer a:hover {
-    color: @color-raw;
-    background-color: @color-medium
+
+.footer a:hover {
+    color: @color-secondary;
+    text-decoration: none
 }

@@ -1,20 +1,10 @@
-<head>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=no">
-  <link rel="shortcut icon" href="https://slack.global.ssl.fastly.net/272a/img/icons/favicon-32.png">
-</head>
-
-<body>
-  <div class="splash">
-    {{> page}}
-  </div>
-</body>
-
-<template name="page">
+<template name="slackit">
   <div class="logos"><div class="logo slack"></div></div>
   {{#if info}}
     {{> login}}
   {{else}}
-    {{> setup}}
+    Chargement...
+    <!--{{> setup}}-->
   {{/if}}
 </template>
 

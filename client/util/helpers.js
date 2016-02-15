@@ -1,0 +1,1 @@
+Template.registerHelper('info', () => Infos.findOne() );
