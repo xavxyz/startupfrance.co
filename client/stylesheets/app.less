@@ -38,6 +38,8 @@
 @color-medium-well: #666;
 @color-well: #555;
 @color-full: #333;
+@color-producthunt: rgb(192, 77, 48);
+@color-soundcloud: rgb(234, 98, 37);
 
 body {
     .position(absolute, 0, 0, 0, 0);
@@ -167,7 +169,17 @@ p.signin a:hover {
     color: @color-medium-rare
 }
 
-.footer a:hover {
-    color: @color-secondary;
+.producthunt a:hover {
+    color: @color-producthunt;
+    text-decoration: none
+}
+
+.news a:hover {
+    color: @color-primary;
+    text-decoration: none
+}
+
+.soundcloud a:hover {
+    color: @color-soundcloud;
     text-decoration: none
 }
