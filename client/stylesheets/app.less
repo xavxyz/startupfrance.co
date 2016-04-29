@@ -41,8 +41,15 @@
 @color-producthunt: rgb(192, 77, 48);
 @color-soundcloud: rgb(234, 98, 37);
 
+html, body {
+    height:100%;
+    overflow:hidden;
+}
+
 body {
-    background-image: url(https://static.pexels.com/photos/370/lights-night-dark-abstract.jpeg);
+    .position(absolute, 0, 0, 0, 0);
+    background-color: @color-secondary;
+    .background-image( linear-gradient(top, @color-secondary, #918e82 100%) );
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: @color-tertiary;
@@ -167,17 +174,7 @@ p.signin a:hover {
     color: @color-medium-rare
 }
 
-.producthunt a:hover {
+.hacklearnmake a:hover {
     color: @color-producthunt;
-    text-decoration: none
-}
-
-.news a:hover {
-    color: @color-primary;
-    text-decoration: none
-}
-
-.soundcloud a:hover {
-    color: @color-soundcloud;
     text-decoration: none
 }
